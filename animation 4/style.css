@@ -1,0 +1,51 @@
+.box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 50px;
+  background-color: #32ac83;
+}
+
+.counter {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.arrow-right-bottom, .arrow-right-top, .arrow-left-top, .arrow-left-bottom {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  transition: .5s ease;
+}
+
+.arrow-left-top, .arrow-left-bottom {
+  transform-origin: left;
+}
+
+.arrow-right-bottom, .arrow-right-top {
+  transform-origin: right;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  width: 30px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  width: 30px;
+  height: 50px;
+  cursor: pointer;
+}
